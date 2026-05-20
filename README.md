@@ -39,9 +39,9 @@ https://age-calculator-javascriptfinal.netlify.app/
 
 ## Installation
 1. Clone the repository
-git clone https://github.com/mahavirbhandari108/age-calculator-js.git
-2. Open project folder
-3. Run index.html in browser
+git clone https://github.com/mahavirbhandari108/Age-calculator-javascript.git
+3. Open project folder
+4. Run index.html in browser
 
 ## Future Improvements
 - Dark/light theme toggle
