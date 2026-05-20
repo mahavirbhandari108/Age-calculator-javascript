@@ -32,10 +32,10 @@ https://age-calculator-javascriptfinal.netlify.app/
 ![Desktop Preview](assets/screenshots/destop-result3-page.png)
 
 ### Mobile View
-![Mobile Preview](assets/screenshots/mobile-homepage.png)
-![Mobile Preview](assets/screenshots/mobile-calender-preview.png)
-![Mobile Preview](assets/screenshots/mobile-result1-page.png)
-![Mobile Preview](assets/screenshots/mobile-result2-page.png)
+![Mobile Preview](assets/screenshots/mobile-homepage.jpeg)
+![Mobile Preview](assets/screenshots/mobile-calender-preview.jpeg)
+![Mobile Preview](assets/screenshots/mobile-result1-page.jpeg)
+![Mobile Preview](assets/screenshots/mobile-result2-page.jpeg)
 
 ## Installation
 1. Clone the repository
