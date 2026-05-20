@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #0dedea; /* Light gray background */
+      color: #333; /* Dark gray text color */
+    }
+
+    input, button {
+      margin: 10px;
+      padding: 5px;
+      font-size: 16px;
+      background-color: #f0ecf0; /* Lighter gray background for inputs and button */
+      border: 1px solid #fe341a; /* Light gray border */
+      color: #333; /* Dark gray text color for inputs and button */
+    }
+
+    button:hover {
+      background-color: #a817eb; /* Slightly darker gray on hover */
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #2a0bef; /* Blue text color for result */
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="color: #f11212;">Age Calculator</h1>
+
+  <label for="dob">Enter your Date of Birth:</label><br>
+  <input type="number" id="day" placeholder="Day" min="1" max="31" required>
+  <input type="number" id="month" placeholder="Month" min="1" max="12" required>
+  <input type="number" id="year" placeholder="Year" min="1900" max="2023" required><br>
+
+  <button onclick="calculateAge()">Calculate Age</button>
+
+  <p id="result"></p>
+
+  <script>
+    function calculateAge() {
+      var day = parseInt(document.getElementById("day").value);
+      var month = parseInt(document.getElementById("month").value);
+      var year = parseInt(document.getElementById("year").value);
+
+      var today = new Date();
+      var birthDate = new Date(year, month - 1, day);
+
+      var age = today.getFullYear() - birthDate.getFullYear();
+      var monthDiff = today.getMonth() - birthDate.getMonth();
+      var dayDiff = today.getDate() - birthDate.getDate();
+
+      if (dayDiff < 0) {
+        monthDiff--;
+      }
+
+      if (monthDiff < 0) {
+        age--;
+        monthDiff += 12;
+      }
+
+      document.getElementById("result").innerHTML = "Your age is: " + age + " years, " + monthDiff + " months, and " + dayDiff + " days";
+    }
+  </script>
+
+</body>
+</html>
